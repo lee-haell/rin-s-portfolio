@@ -367,8 +367,7 @@
     border-radius: 10px;
 }
 
-.cardWrap .cardLink::before, 
-.cardWrap .cardLink::after {
+.cardWrap .cardLink::before {
     content: '';
     position: absolute;
     width: 100%;
