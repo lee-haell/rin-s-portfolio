@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+/* footer 영역 */
+.footerWrap {
+    padding: 100px 0;
+    color: var(--subColor);
+}
+
+.footerWrap .infoWrap {
+    text-align: center;
+}
+
+.infoWrap .infoList {
+    padding: 5px 0;
+}
+
+.infoWrap .infoList .infoHover {
+    display: block;
+    position: relative;
+    padding: 10px 0;
+    font-size: 1.5rem;
+    color: var(--pointColor);
+    transition: all .5s ease-out;
+}
+
+.infoWrap .infoList:nth-child(1):hover .infoHover {
+    color: var(--mainColor);
+    transform: scale(1.5);
+}
+
+.infoWrap .infoList .infoLink {
+    padding-right: 10px;
+}
+
+.infoWrap .infoList:nth-child(2) .infoData {
+    font-family: 'EB Garamond', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.infoWrap .infoList:last-child {
+    font-size: .875rem;
+}
