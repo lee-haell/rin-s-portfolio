@@ -28,7 +28,7 @@
     transform: scale(1.5);
 }
 
-.infoWrap .infoList .infoLink {
+.infoWrap .infoList .infoLink:first-child {
     padding-right: 10px;
 }
 
