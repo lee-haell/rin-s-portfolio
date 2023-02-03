@@ -26,5 +26,10 @@
 }
 
 /* laptop size - 768px */
+@media screen and (max-width: 768px) {
+    .wrap .inner {
+        max-width: 320px;
+    }
+}
 
 /* laptop size - 320px */
