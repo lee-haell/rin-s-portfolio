@@ -1,8 +1,9 @@
 @charset "utf-8";
 
+/* index.html */
 /* header 영역 */
 .headerWrap {
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 
 .headerWrap .headerInner {
@@ -11,7 +12,7 @@
 }
 
 .headerWrap .logo {
-    font-size: 1.25rem;
+    font-size: 2rem;
     font-weight: 600;
     font-family: 'EB Garamond';
     color: var(--mainColor);

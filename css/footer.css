@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+/* index.html */
 /* footer 영역 */
 .footerWrap {
     padding: 100px 0;
@@ -18,7 +19,7 @@
     display: block;
     position: relative;
     padding: 10px 0;
-    font-size: 1.5rem;
+    font-size: 2.4rem;
     color: var(--pointColor);
     transition: all .5s ease-out;
 }
@@ -36,8 +37,9 @@
     font-family: 'EB Garamond', sans-serif;
     font-style: italic;
     font-weight: 600;
+    font-size: 2rem;
 }
 
 .infoWrap .infoList:last-child {
-    font-size: .875rem;
+    font-size: 1.4rem;
 }

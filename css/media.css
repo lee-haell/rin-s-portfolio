@@ -12,8 +12,16 @@
         height: 240px;
     }
 
+    .bookCoverWrap .imgAvatar {
+        width: 130px;
+    }
+
     .bookCoverWrap .book .coverTitle {
-        font-size: 1rem;
+        font-size: 1.6rem;
+    }
+
+    .introWrap {
+        padding: 100px 0;
     }
 
     .itemWrap {
@@ -21,15 +29,102 @@
     }
 
     .bookCoverWrap .book .page .openBtn {
-        font-size: 1.25rem;
+        font-size: 2rem;
+    }
+
+    .introWrap .mainIntro {
+        font-size: 1.6rem;
+    }
+
+    .introPoint {
+        font-size: 3rem;
+    }
+
+    .articleWrap .title {
+        font-size: 1.8rem;
     }
 }
 
-/* laptop size - 768px */
+/* tablet size - 768px */
 @media screen and (max-width: 768px) {
     .wrap .inner {
         max-width: 320px;
     }
+
+    .headerWrap .headerInner {
+        justify-content: center;
+    }
+
+    .introWrap .mainIntro {
+        font-size: 1.4rem;
+    }
+
+    .introWrap {
+        padding: 80px 0;
+    }
+
+    .introPoint {
+        font-size: 1.8rem;
+    }
+
+    .introWrap .point {
+        width: 100px;
+        font-size: 1.4rem;
+        margin: 30px auto 0 auto;
+    }
+
+    .articleWrap .title {
+        font-size: 1.6rem;
+    }
+
+    .infoWrap .infoList .infoHover {
+        font-size: 2rem;
+    }
+
+    .infoWrap .infoList:nth-child(2) .infoData {
+        font-size: 1.6rem;
+    }
+
+    .infoWrap .infoList:last-child {
+        font-size: 1.2rem;
+    }
+
+    .footerWrap {
+        padding: 50px 0;
+    }
 }
 
-/* laptop size - 320px */
+/* mobile size - 320px */
+@media screen and (max-width: 320px) {
+    .bookCoverWrap .book {
+        width: 130px;
+        height: 200px;
+    }
+
+    .bookCoverWrap .imgAvatar {
+        width: 100px;
+    }
+
+    .bookCoverWrap .book .coverTitleWrap {
+        border-radius: 5px;
+    }
+
+    .bookCoverWrap .book .coverTitle {
+        font-size: 1.4rem;
+        bottom: 30px;
+    }
+
+    .bookCoverWrap .book .frontCover {
+        border-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .bookCoverWrap .book .page > li {
+        border-radius: 0px 3px 3px 0px;
+    }
+
+    .bookCoverWrap .book .back li {
+        border-radius: 5px;
+    }
+}

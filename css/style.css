@@ -1,6 +1,7 @@
 @charset "utf-8";
 
-/* 커버 화면 - home.html */
+/* index.html */
+/* 커버 화면 */
 .bookCoverWrap {
     width: 100%;
     height: 100vh;
@@ -40,7 +41,7 @@
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
 }
- 
+
 .bookCoverWrap .book .front {
     -webkit-transform: rotateY(-34deg) translateZ(8px);
     -moz-transform: rotateY(-34deg) translateZ(8px);
@@ -83,18 +84,23 @@
     z-index: -1;
 }
 
+.bookCoverWrap .imgAvatar {
+    width: 150px;
+    padding-top: 30px;;
+}
+
 .bookCoverWrap .book .coverTitle {
     position: absolute;
-    top: 50%;
+    bottom: 40px;
     left: 50%;
     width: 100%;
     letter-spacing: 2px;
-    font-size: 1.25rem;
+    font-size: 2rem;
     font-weight: 400;
     font-family: 'EB Garamond', sans-serif;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
 }
 
 .bookCoverWrap .book .page, 
@@ -224,7 +230,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    font-size: 1.5rem;
+    font-size: 2.4rem;
     font-weight: 400;
     letter-spacing: 2px;
     color: var(--subColor);
@@ -243,7 +249,7 @@
 }
 
 
-/* home.html */
+/* 커버 끝 > 메인 페이지 */
 .wrap {
     position: relative;
     background-color: var(--textColor);
@@ -262,7 +268,7 @@
 }
 
 .introPoint {
-    font-size: 40px;
+    font-size: 4rem;
     font-family: 'EB Garamond', sans-serif;
     animation: colorChangeEffect 2s infinite;  
 }
@@ -289,7 +295,7 @@
     position: relative;
     margin-bottom: 1.375rem;
     color: var(--subColor);
-    font-size: 1.125rem;
+    font-size: 1.8rem;
     line-height: 1.5;
 }
 
@@ -298,7 +304,7 @@
     width: 150px;
     padding: 10px;
     margin: 50px auto 0 auto;
-    font-size: 1.125rem;
+    font-size: 1.8rem;
     font-style: italic;
     font-weight: 600;
     color: var(--mainColor);
@@ -315,12 +321,12 @@
 }
 
 .introWrap .subIntro {
-    font-size: 1.625rem;
+    font-size: 2.6rem;
 }
 
 .introWrap .pointIntro {
     position: relative;
-    font-size: 2.625rem;
+    font-size: 4.2rem;
     z-index: 0;
 }
 
@@ -337,7 +343,7 @@
 .articleWrap .title {
     display: block;
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 2.4rem;
     font-family: 'EB Garamond', sans-serif;
     color: var(--mainColor);
 }
@@ -367,6 +373,7 @@
 .itemWrap .cardWrap .cardLink {
     display: block;
     padding-top: 80px;
+    font-size: 1.6rem;
     font-family: 'EB Garamond', sans-serif;
     font-weight: 600;
     font-style: italic;
@@ -481,7 +488,7 @@
 }
 
 .cardWrap .back .backTitle {
-    font-size: .875rem;
+    font-size: 1.4rem;
     position: absolute;
     top: 50%;
     left: 50%;
