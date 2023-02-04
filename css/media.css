@@ -7,6 +7,15 @@
         max-width: 768px;
     }
 
+    .coverStrWrap .coverStrInner {
+        width: 450px;
+        height: 450px;
+    }
+
+    .coverStrWrap .text .textSplit {
+        transform-origin: 0 225px;
+    }
+
     .bookCoverWrap .book {
         width: 170px;
         height: 240px;
@@ -49,6 +58,15 @@
 @media screen and (max-width: 768px) {
     .wrap .inner {
         max-width: 320px;
+    }
+
+    .coverStrWrap .coverStrInner {
+        width: 400px;
+        height: 400px;
+    }
+
+    .coverStrWrap .text .textSplit {
+        transform-origin: 0 200px;
     }
 
     .headerWrap .headerInner {
@@ -96,6 +114,15 @@
 
 /* mobile size - 320px */
 @media screen and (max-width: 320px) {
+    .coverStrWrap .coverStrInner {
+        width: 300px;
+        height: 300px;
+    }
+
+    .coverStrWrap .text .textSplit {
+        transform-origin: 0 150px;
+    }
+
     .bookCoverWrap .book {
         width: 130px;
         height: 200px;

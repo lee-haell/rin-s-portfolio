@@ -4,7 +4,7 @@
 /* 커버 화면 */
 .bookCoverWrap {
     width: 100%;
-    height: 100vh;
+    height: 1500px;
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -31,7 +31,11 @@
 }
 
 .bookCoverWrap .book {
-    position: relative;
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
     width: 200px;
     height: 270px;
     margin: 0 auto;
@@ -40,6 +44,7 @@
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
+    z-index: 1;
 }
 
 .bookCoverWrap .book .front {
@@ -175,13 +180,13 @@
     background-color: #202020;
 }
 
-.bookCoverWrap .book:hover .front {
+.bookCoverWrap .book.openActive1 .front {
     -webkit-transform: rotateY(-180deg) translateZ(0);
     -moz-transform: rotateY(-180deg) translateZ(0);
     transform: rotateY(-180deg) translateZ(0);
 }
 
-.bookCoverWrap .book:hover > .page li:nth-child(1) {
+.bookCoverWrap .book.openActive2 > .page li:nth-child(1) {
     -webkit-transform: rotateY(-30deg);
     -moz-transform: rotateY(-30deg);
     transform: rotateY(-30deg);
@@ -190,7 +195,7 @@
     transition: 1.5s;
 }
 
-.bookCoverWrap .book:hover > .page li:nth-child(2) {
+.bookCoverWrap .book.openActive3 > .page li:nth-child(2) {
     -webkit-transform: rotateY(-35deg);
     -moz-transform: rotateY(-35deg);
     transform: rotateY(-35deg);
@@ -199,7 +204,7 @@
     transition: 1.7s;
 }
 
-.bookCoverWrap .book:hover > .page li:nth-child(3) {
+.bookCoverWrap .book.openActive4 > .page li:nth-child(3) {
     -webkit-transform: rotateY(-145deg);
     -moz-transform: rotateY(-145deg);
     transform: rotateY(-145deg);
@@ -208,7 +213,7 @@
     transition: 1.5s;
 }
 
-.bookCoverWrap .book:hover > .page li:nth-child(4) {
+.bookCoverWrap .book.openActive4 > .page li:nth-child(4) {
     -webkit-transform: rotateY(-150deg);
     -moz-transform: rotateY(-150deg);
     transform: rotateY(-150deg);
@@ -217,7 +222,7 @@
     transition: 1s;
 }
 
-.bookCoverWrap .book:hover > .page li:nth-child(5) {
+.bookCoverWrap .book.openActive4 > .page li:nth-child(5) {
     -webkit-transform: rotateY(-155deg);
     -moz-transform: rotateY(-155deg);
     transform: rotateY(-155deg);
@@ -247,6 +252,123 @@
 .bookCoverWrap .book .page .openBtn:hover {
     color: var(--pointColor);
 }
+
+
+/* 배경 텍스트 영역 */
+.coverStrWrap {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.coverStrWrap .coverStrInner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+}
+
+.coverStrWrap .coverStrInner .text {
+    width: 100%;
+    height: 100%;
+    animation: rotateStr 15s linear infinite;
+}
+
+@keyframes rotateStr {
+    0% {
+        transform: rotate(-360deg);
+    }
+}
+
+.coverStrWrap .text .textSplit {
+    position: absolute;
+    left: 50%;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    color: var(--subColor);
+    transform-origin: 0 250px;
+}
+
+/* .scrollText .text:nth-child(1) {
+    color: var(--subColor);
+    transform: rotate(-5deg);
+}
+
+.scrollText .textList.scrollDown .text:nth-child(1) {
+    animation: marqueeDown1 2s ease-out;
+}
+
+.scrollText .textList.scrollUp .text:nth-child(1) {
+    animation: marqueeUp1 2s ease-out;
+}
+
+@keyframes marqueeDown1 {
+    0% {
+        transform: rotate(-5deg) translateX(-20%);
+    }
+    50% {
+        transform: rotate(-5deg) translateX(-60%);
+    }
+    100% {
+        transform: rotate(-5deg) translateX(-100%);
+    }
+}
+
+@keyframes marqueeUp1 {
+    0% {
+        transform: rotate(-5deg) translateX(-100%);
+    }
+    50% {
+        transform: rotate(-5deg) translateX(-60%);
+    }
+    100% {
+        transform: rotate(-5deg) translateX(-20%);
+    }
+}
+
+.scrollText .textList .text:nth-child(2) {
+    color: var(--pointColor);
+    transform: rotate(5deg);
+}
+
+.scrollText .textList.scrollDown .text:nth-child(2) {
+    animation: marqueeDown2 2s ease-out;
+}
+
+.scrollText .textList.scrollUp .text:nth-child(2) {
+    animation: marqueeUp2 2s ease-out;
+}
+
+@keyframes marqueeDown2 {
+    0% {
+        transform: rotate(5deg) translateX(20%);
+    }
+    50% {
+        transform: rotate(5deg) translateX(60%);
+    }
+    100% {
+        transform: rotate(5deg) translateX(100%);
+    }
+}
+
+@keyframes marqueeUp2 {
+    0% {
+        transform: rotate(5deg) translateX(100%);
+    }
+    50% {
+        transform: rotate(5deg) translateX(60%);
+    }
+    100% {
+        transform: rotate(5deg) translateX(20%);
+    }
+} */
 
 
 /* 커버 끝 > 메인 페이지 */

@@ -1,10 +1,25 @@
 $(function(){
+    // scroll animation
+    //
+    //
+    let marqueeStr = $('.textList');
 
-    //첫 페이지 전환
-    $('#openBtn').click(function(){
-        $('.bookCoverWrap').addClass('pageTransition');
-        $('.bookCoverWrap').fadeOut(1000);
-        $('.wrap').removeClass('hide');
+    $(window).scroll(function(){
+        const scrollValue = $(document).scrollTop();
+        console.log(scrollValue);
+
+        if(scrollValue >= 500){
+            marqueeStr.removeClass('scrollUp');
+            marqueeStr.addClass('scrollDown');
+        } 
+        else {
+            marqueeStr.removeClass('scrollDown');
+            marqueeStr.addClass('scrollUp');
+        }
+
     });
+
+
+
 
 });

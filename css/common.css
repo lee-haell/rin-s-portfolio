@@ -31,12 +31,20 @@ body,
     padding-right: 2.2px;
 }
 
+.subColor {
+    color: var(--subColor);
+}
+
+.pointColor {
+    color: var(--pointColor);
+}
+
 
 /* 컬러값 */
 :root {
     --mainColor: #202020;
-    --subColor: #626062;
-    --pointColor: #E5C179;
+    --subColor: #9FD8E5;
+    --pointColor: #EC7495;
     --textColor: #faf6ed;
 }
 
