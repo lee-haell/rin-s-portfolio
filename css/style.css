@@ -42,6 +42,10 @@
     transform: scale(1.5);
 }
 
+.coverStrWrap .coverStrInner.openActive3 {
+    transform: scale(2);
+}
+
 .coverStrWrap .coverStrInner .text {
     width: 100%;
     height: 100%;
@@ -62,98 +66,6 @@
     color: var(--subColor);
     transform-origin: 0 250px;
 }
-
-/* .scrollText .text:nth-child(1) {
-    color: var(--subColor);
-    transform: rotate(-5deg);
-}
-
-.scrollText .textList.scrollDown .text:nth-child(1) {
-    animation: marqueeDown1 2s ease-out;
-}
-
-.scrollText .textList.scrollUp .text:nth-child(1) {
-    animation: marqueeUp1 2s ease-out;
-}
-
-@keyframes marqueeDown1 {
-    0% {
-        transform: rotate(-5deg) translateX(-20%);
-    }
-    50% {
-        transform: rotate(-5deg) translateX(-60%);
-    }
-    100% {
-        transform: rotate(-5deg) translateX(-100%);
-    }
-}
-
-@keyframes marqueeUp1 {
-    0% {
-        transform: rotate(-5deg) translateX(-100%);
-    }
-    50% {
-        transform: rotate(-5deg) translateX(-60%);
-    }
-    100% {
-        transform: rotate(-5deg) translateX(-20%);
-    }
-}
-
-.scrollText .textList .text:nth-child(2) {
-    color: var(--pointColor);
-    transform: rotate(5deg);
-}
-
-.scrollText .textList.scrollDown .text:nth-child(2) {
-    animation: marqueeDown2 2s ease-out;
-}
-
-.scrollText .textList.scrollUp .text:nth-child(2) {
-    animation: marqueeUp2 2s ease-out;
-}
-
-@keyframes marqueeDown2 {
-    0% {
-        transform: rotate(5deg) translateX(20%);
-    }
-    50% {
-        transform: rotate(5deg) translateX(60%);
-    }
-    100% {
-        transform: rotate(5deg) translateX(100%);
-    }
-}
-
-@keyframes marqueeUp2 {
-    0% {
-        transform: rotate(5deg) translateX(100%);
-    }
-    50% {
-        transform: rotate(5deg) translateX(60%);
-    }
-    100% {
-        transform: rotate(5deg) translateX(20%);
-    }
-} */
-
-
-/* 다이어리 확대 animation */
-/* .bookCoverWrap.pageTransition {
-    animation: pageTransition 3s ease-out;
-}
-
-@keyframes pageTransition {
-    0% {
-        transform: scale(1.5);
-    }
-    50% {
-        transform: scale(4);
-    }
-    100% {
-        transform: scale(8);
-    }
-} */
 
 
 /* 다이어리 영역 */
@@ -329,10 +241,10 @@
 
 @keyframes bookScale {
     0% {
-        transform: scale(1);
+        transform: translateY(-50%) scale(1.3);
     }
     100% {
-        transform: scale(1.5);
+        transform: translateY(-50%) scale(2);
     }
 }
 
@@ -398,7 +310,7 @@
     font-size: 2.4rem;
     font-weight: 400;
     letter-spacing: 2px;
-    color: var(--subColor);
+    color: var(--pointColor);
     font-family: 'EB Garamond', sans-serif;
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
@@ -446,7 +358,7 @@
         color: var(--pointColor);
     }
     100% {
-        color: var(--mainColor);
+        color: var(--subColor);
     }
 }
 
@@ -458,8 +370,7 @@
 
 .introWrap .mainIntro {
     position: relative;
-    margin-bottom: 1.375rem;
-    color: var(--subColor);
+    color: var(--mainColor);
     font-size: 1.8rem;
     line-height: 1.5;
 }
@@ -546,7 +457,7 @@
     position: relative;
     width: 264px;
     height: 300px;
-    background-color: var(--subColor);
+    background-color: var(--mainColor);
     border-radius: 10px;
 }
 

@@ -2,6 +2,7 @@ $(function(){
     // scroll animation
     //
     //
+    let coverWrap = $('.bookCoverWrap');
     let coverStr = $('.coverStrInner');
     let book = $('.book');
 
@@ -23,6 +24,20 @@ $(function(){
             coverStr.removeClass('openActive2');
             book.removeClass('openActive2');
         }
+
+        if(scrollValue >= 700){
+            coverStr.addClass('openActive3');
+            book.addClass('openActive3');
+        }
+
+        if(scrollValue >= 800){
+            coverWrap.fadeOut(500);
+            coverWrap.siblings('.wrap').removeClass('hide');
+        }
+
+        
+
+
 
 
 
