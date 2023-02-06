@@ -62,6 +62,8 @@
     position: absolute;
     left: 50%;
     font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Noto Sans', sans-serif;
     letter-spacing: 5px;
     color: var(--subColor);
     transform-origin: 0 250px;
@@ -308,7 +310,7 @@
     top: 50%;
     left: 50%;
     font-size: 2.4rem;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 2px;
     color: var(--pointColor);
     font-family: 'EB Garamond', sans-serif;
@@ -346,6 +348,7 @@
 
 .introPoint {
     font-size: 4rem;
+    font-weight: 600;
     font-family: 'EB Garamond', sans-serif;
     animation: colorChangeEffect 2s infinite;  
 }
@@ -373,27 +376,29 @@
     color: var(--mainColor);
     font-size: 1.8rem;
     line-height: 1.5;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .introWrap .point {
     display: block;
-    width: 150px;
+    width: 130px;
     padding: 10px;
     margin: 50px auto 0 auto;
     font-size: 1.8rem;
     font-style: italic;
     font-weight: 600;
-    color: var(--mainColor);
+    font-family: 'Roboto', sans-serif;
+    color: var(--subColor);
     border-radius: 50%;
-    border: 1px solid var(--mainColor);
+    border: 1px solid var(--subColor);
 }
 
 .introWrap .point:hover {
     color: var(--pointColor);
     border: 1px solid var(--pointColor);
-    -webkit-transition: all .3s ease-out;
-    -moz-transition: all .3s ease-out;
-    transition: all .3s ease-out;
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    transition: all .5s ease-out;
 }
 
 .introWrap .subIntro {
@@ -447,7 +452,6 @@
 }
 
 .itemWrap .cardWrap .cardLink {
-    display: block;
     padding-top: 80px;
     font-size: 1.6rem;
     font-family: 'EB Garamond', sans-serif;

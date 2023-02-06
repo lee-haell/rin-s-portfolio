@@ -18,7 +18,6 @@
 .infoWrap .infoList .infoHover {
     display: block;
     position: relative;
-    padding: 10px 0;
     font-size: 2.4rem;
     color: var(--subColor);
     transition: all .5s ease-out;
@@ -43,5 +42,6 @@
 
 .infoWrap .infoList:last-child {
     font-size: 1.4rem;
+    padding-top: 30px;
     color: var(--mainColor);
 }

@@ -12,8 +12,8 @@
 }
 
 .headerWrap .logo {
-    font-size: 2rem;
-    font-weight: 600;
+    font-size: 2.4rem;
+    font-weight: 700;
     font-family: 'EB Garamond', sans-serif;
     color: var(--mainColor);
     cursor: pointer;
