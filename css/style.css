@@ -58,6 +58,7 @@
     }
 }
 
+/* js로 추가한 span태그에 붙는 textSplit 클래스 */
 .coverStrWrap .text .textSplit {
     position: absolute;
     left: 50%;
@@ -88,7 +89,7 @@
     z-index: 1;
 }
 
-.bookCoverWrap .book .front {
+.book .front {
     -webkit-transform: rotateY(-34deg) translateZ(8px);
     -moz-transform: rotateY(-34deg) translateZ(8px);
     transform: rotateY(-34deg) translateZ(8px);
@@ -97,10 +98,10 @@
     transition: all .8s ease, z-index .6s;
 }
 
-.bookCoverWrap .book .front, 
-.bookCoverWrap .book .front li, 
-.bookCoverWrap .book .back, 
-.bookCoverWrap .book .back li {
+.book .front, 
+.book .front li, 
+.book .back, 
+.book .back li {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -109,26 +110,26 @@
     transform-style: preserve-3d;
 }
 
-.bookCoverWrap .book .front, 
-.bookCoverWrap .book .back {
+.book .front, 
+.book .back {
     /* 회전 중심 지정 - 왼쪽 모서리 하단 위치 */
     transform-origin: 0% 100%;
 }
 
-.bookCoverWrap .book .front li:first-child {
+.book .front li:first-child {
     z-index: 1;
 }
 
-.bookCoverWrap .book .front li:last-child {
+.book .front li:last-child {
     border-radius: 10px;
     background-color: var(--mainColor);
 }
 
-.bookCoverWrap .book .coverTitleWrap {
+.book .coverTitleWrap {
     border-radius: 10px;
 }
 
-.bookCoverWrap .book .frontCover {
+.book .frontCover {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -139,12 +140,12 @@
     z-index: -1;
 }
 
-.bookCoverWrap .imgAvatar {
+.imgAvatar {
     width: 150px;
     padding-top: 30px;;
 }
 
-.bookCoverWrap .book .coverTitle {
+.frontCover .coverTitle {
     position: absolute;
     bottom: 40px;
     left: 50%;
@@ -158,12 +159,12 @@
     transform: translateX(-50%);
 }
 
-.bookCoverWrap .book .page, 
-.bookCoverWrap .book .page > li {
+.book .page, 
+.book .page > li {
     position: absolute;
 }
 
-.bookCoverWrap .book .page {
+.book .page {
     width: 100%;
     height: 90%;
     left: .5%;
@@ -173,7 +174,7 @@
     transform: translateY(-50%);
 }
 
-.bookCoverWrap .book .page > li {
+.book .page > li {
     background: -webkit-linear-gradient(left, #e1ddd8 0%, #fffbf6 100%);
     background: linear-gradient(left, #e1ddd8 0%, #fffbf6 100%);
     box-shadow: inset 0px -1px 2px rgba(50, 50, 50, .1),
@@ -185,59 +186,59 @@
     transition-duration: .6s;
 }
 
-.bookCoverWrap .book .page li:nth-child(1) {
+.book .page li:nth-child(1) {
     -webkit-transform: rotateY(-28deg);
     -moz-transform: rotateY(-28deg);
     transform: rotateY(-28deg);
 }
 
-.bookCoverWrap .book .page li:nth-child(2) {
+.book .page li:nth-child(2) {
     -webkit-transform: rotateY(-30deg);
     -moz-transform: rotateY(-30deg);
     transform: rotateY(-30deg);
 }
 
-.bookCoverWrap .book .page li:nth-child(3) {
+.book .page li:nth-child(3) {
     -webkit-transform: rotateY(-32deg);
     -moz-transform: rotateY(-32deg);
     transform: rotateY(-32deg);
     z-index: 3;
 }
 
-.bookCoverWrap .book .page li:nth-child(4) {
+.book .page li:nth-child(4) {
     -webkit-transform: rotateY(-34deg);
     -moz-transform: rotateY(-34deg);
     transform: rotateY(-34deg);
     z-index: 2;
 }
 
-.bookCoverWrap .book .page li:nth-child(5) {
+.book .page li:nth-child(5) {
     -webkit-transform: rotateY(-36deg);
     -moz-transform: rotateY(-36deg);
     transform: rotateY(-36deg);
     z-index: 1;
 }
 
-.bookCoverWrap .book .back {
+.book .back {
     -webkit-transform: rotateY(0deg) translateZ(-1px);
     -moz-transform: rotateY(0deg) translateZ(-1px);
     transform: rotateY(0deg) translateZ(-1px);
 }
 
-.bookCoverWrap .book .back li {
+.book .back li {
     width: 97.5% !important;
     border-radius: 10px;
     background-color: var(--mainColor);
 }
 
-.bookCoverWrap .book.openActive1 {
+.book.openActive1 {
     left: 50%;
     -webkit-transition: all 1s ease-out;
     -moz-transition: all 1s ease-out;
     transition: all 1s ease-out;
 }
 
-.bookCoverWrap .book.openActive3 {
+.book.openActive3 {
     animation: bookScale 1s ease-out;
 }
 
@@ -250,17 +251,17 @@
     }
 }
 
-.bookCoverWrap .book.openActive1 .front li:first-child {
+.book.openActive1 .front li:first-child {
     z-index: 0;
 }
 
-.bookCoverWrap .book.openActive1 .front {
+.book.openActive1 .front {
     -webkit-transform: rotateY(-180deg) translateZ(0);
     -moz-transform: rotateY(-180deg) translateZ(0);
     transform: rotateY(-180deg) translateZ(0);
 }
 
-.bookCoverWrap .book.openActive1 > .page li:nth-child(1) {
+.book.openActive1 > .page li:nth-child(1) {
     -webkit-transform: rotateY(-30deg);
     -moz-transform: rotateY(-30deg);
     transform: rotateY(-30deg);
@@ -269,7 +270,7 @@
     transition: all 1.3s ease-out;
 }
 
-.bookCoverWrap .book.openActive2 > .page li:nth-child(2) {
+.book.openActive2 > .page li:nth-child(2) {
     -webkit-transform: rotateY(-35deg);
     -moz-transform: rotateY(-35deg);
     transform: rotateY(-35deg);
@@ -278,7 +279,7 @@
     transition: all 1.3s ease-out;
 }
 
-.bookCoverWrap .book.openActive2 > .page li:nth-child(3) {
+.book.openActive2 > .page li:nth-child(3) {
     -webkit-transform: rotateY(-145deg);
     -moz-transform: rotateY(-145deg);
     transform: rotateY(-145deg);
@@ -287,7 +288,7 @@
     transition: all 1.5s ease-out;
 }
 
-.bookCoverWrap .book.openActive2 > .page li:nth-child(4) {
+.book.openActive2 > .page li:nth-child(4) {
     -webkit-transform: rotateY(-150deg);
     -moz-transform: rotateY(-150deg);
     transform: rotateY(-150deg);
@@ -296,7 +297,7 @@
     transition: all 1s ease-out;
 }
 
-.bookCoverWrap .book.openActive2 > .page li:nth-child(5) {
+.book.openActive2 > .page li:nth-child(5) {
     -webkit-transform: rotateY(-155deg);
     -moz-transform: rotateY(-155deg);
     transform: rotateY(-155deg);
@@ -305,7 +306,7 @@
     transition: all .5s ease-out;
 }
 
-.bookCoverWrap .book .page .openBtn {
+.book .page .openBtn {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -323,7 +324,7 @@
     cursor: pointer;
 }
 
-.bookCoverWrap .book .page .openBtn:hover {
+.book .page .openBtn:hover {
     color: var(--pointColor);
 }
 

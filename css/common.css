@@ -7,16 +7,11 @@ body, html {
     font-family: 'Roboto', sans-serif;
 }
 
-body, 
-.wrap {
+body, .wrap {
     color: #fefefe;
     background-color: var(--textColor);
     overflow-x: hidden;
 }
-
-/* body, html, a {
-    cursor: none;
-} */
 
 .hide {
     display: none !important;
@@ -47,52 +42,3 @@ body,
     --pointColor: #EC7495;
     --textColor: #faf6ed;
 }
-
-
-/* 마우스 커서 */
-.mouseCursor {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border: 3px solid var(--pointColor);
-    border-radius: 50%;
-    pointer-events: none; /* 링크에 접근 가능하게 */
-    transform: translate(-50%, -50%);
-    z-index: 10;
-}
-
-.cursorHover {
-    transform: scale(2);
-    background-color: var(--pointColor)
-}
-
-/* .mouseCursor .mouseCursorCnt {
-    position: relative;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid #EF5DA8;
-    background-color: transparent;
-    --cursor-scale: 1;
-    will-change: transform;
-    transform: scale3d(var(--cursor-scale), var(--cursor-scale), 1);
-    transition: transform 150ms ease-in-out,
-                background-color 150ms ease-in-out;
-}
-
-.mouseCursor .mouseCursorCnt.effect {
-    background-color: #EF5DA8;
-}
-
-.mouseCursor .mouseCursorCnt::after {
-    content: attr(data-name);
-    position: absolute;
-    font-size: .8125rem;
-    font-style: italic;
-    color: #fff;
-    white-space: nowrap;
-    transform: scale(.45);
-} */

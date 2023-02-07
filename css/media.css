@@ -21,11 +21,11 @@
         height: 240px;
     }
 
-    .bookCoverWrap .imgAvatar {
+    .imgAvatar {
         width: 130px;
     }
 
-    .bookCoverWrap .book .coverTitle {
+    .frontCover .coverTitle {
         font-size: 1.6rem;
     }
 
@@ -37,7 +37,7 @@
         justify-items: center;
     }
 
-    .bookCoverWrap .book .page .openBtn {
+    .book .page .openBtn {
         font-size: 2rem;
     }
 
@@ -128,30 +128,30 @@
         height: 200px;
     }
 
-    .bookCoverWrap .imgAvatar {
+    .imgAvatar {
         width: 100px;
     }
 
-    .bookCoverWrap .book .coverTitleWrap {
+    .book .coverTitleWrap {
         border-radius: 5px;
     }
 
-    .bookCoverWrap .book .coverTitle {
+    .frontCover .coverTitle {
         font-size: 1.4rem;
         bottom: 30px;
     }
 
-    .bookCoverWrap .book .frontCover {
+    .book .frontCover {
         border-radius: 5px;
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
     }
 
-    .bookCoverWrap .book .page > li {
+    .book .page > li {
         border-radius: 0px 3px 3px 0px;
     }
 
-    .bookCoverWrap .book .back li {
+    .book .back li {
         border-radius: 5px;
     }
 }
