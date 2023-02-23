@@ -561,6 +561,10 @@
     background-image: url('/img/img-tokenpost.png');
 }
 
+.cardWrap .diary8.back::before {
+    background-image: url('/img/img-cafe24.png');
+}
+
 .cardWrap .back::after {
     top: 0;
     left: 0;
