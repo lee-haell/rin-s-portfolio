@@ -30,8 +30,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
     -webkit-transition: all .5s ease-out;
     -moz-transition: all .5s ease-out;
@@ -62,12 +62,12 @@
 .coverStrWrap .text .textSplit {
     position: absolute;
     left: 50%;
-    font-size: 2rem;
+    font-size: 1.4rem;
     font-weight: 700;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'avenirNextW04', sans-serif;
     letter-spacing: 5px;
     color: var(--subColor);
-    transform-origin: 0 250px;
+    transform-origin: 0 200px;
 }
 
 
@@ -78,8 +78,8 @@
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     transform: translateY(-50%);
-    width: 200px;
-    height: 270px;
+    width: 150px;
+    height: 200px;
     margin: 0 auto;
     text-align: center;
     perspective: 1000px;
@@ -133,9 +133,9 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    border-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
     background-color: var(--textColor);
     z-index: -1;
 }
@@ -165,7 +165,7 @@
     left: 50%;
     width: 100%;
     letter-spacing: 2px;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-family: 'roxboroughCf', sans-serif;
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
@@ -241,7 +241,7 @@
 
 .book .back li {
     width: 97.5% !important;
-    border-radius: 5px;
+    border-radius: 3px;
     background-color: var(--textColor);
 }
 
@@ -324,7 +324,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    font-size: 2.2rem;
+    font-size: 1.6rem;
     font-weight: 600;
     letter-spacing: 2px;
     color: var(--pointColor);
@@ -346,7 +346,7 @@
 /* 커버 끝 > 메인 페이지 */
 .wrap {
     position: relative;
-    background-color: var(--textColor);
+    background-color: var(--mainColor);
 }
 
 .wrap .inner {
@@ -363,8 +363,7 @@
 
 .introPoint {
     font-size: 4rem;
-    font-weight: 600;
-    font-family: 'EB Garamond', sans-serif;
+    font-family: 'roxboroughCf', sans-serif;
     animation: colorChangeEffect 2s infinite;  
 }
 
@@ -388,7 +387,7 @@
 
 .introWrap .mainIntro {
     position: relative;
-    color: var(--mainColor);
+    color: var(--textColor);
     font-size: 1.8rem;
     line-height: 1.5;
     font-family: 'Noto Sans', sans-serif;
@@ -402,7 +401,7 @@
     font-size: 1.8rem;
     font-style: italic;
     font-weight: 600;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'avenirNextW04', sans-serif;
     color: var(--subColor);
     border-radius: 50%;
     border: 1px solid var(--subColor);
@@ -446,7 +445,7 @@
 
 .itemWrap {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); 
     /* 숫자 비율대로 트랙의 크기를 나눔, fr:fraction */
     grid-gap: 3rem;
     margin: 2rem 0;
@@ -454,11 +453,11 @@
 }
 
 .itemWrap .cardWrap {
-    width: 264px;
-    height: 300px;
+    width: 190px;
+    height: 250px;
     overflow: hidden;
     position: relative;
-    border-radius: 10px;
+    border-radius: 3px;
     -webkit-transition: all .5s ease-out;
     -moz-transition: all .5s ease-out;
     transition: all .5s ease-out;
@@ -467,17 +466,18 @@
 }
 
 .itemWrap .cardWrap .cardLink {
-    padding-top: 80px;
     font-size: 1.6rem;
-    font-family: 'EB Garamond', sans-serif;
+    font-family: 'roxboroughCf', sans-serif;
     font-weight: 600;
     font-style: italic;
     text-align: center;
     position: relative;
-    width: 264px;
-    height: 300px;
-    background-color: var(--mainColor);
-    border-radius: 10px;
+    width: 190px;
+    height: 250px;
+    padding-top: 70px;
+    color: var(--mainColor);
+    background-color: var(--pointColor);
+    border-radius: 3px;
 }
 
 .cardWrap .cardLink::before {
@@ -487,13 +487,13 @@
 }
 
 .cardWrap .cardLink::before {
-    height: 50px;
-    top: 50%;
+    height: 30px;
+    top: 55%;
     left: 50%;
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
     transform: translateX(-50%);
-    background-color: var(--pointColor);
+    background-color: var(--textColor);
 }
 
 .cardWrap .backWrap {
@@ -514,8 +514,8 @@
 }
 
 .cardWrap .back {
-    border-radius: 10px;
-    background-color: var(--mainColor);
+    border-radius: 3px;
+    background-color: var(--subColor);
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
     transform: rotateY(180deg);
@@ -538,7 +538,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 3px;
 }
 
 .cardWrap .back::before {

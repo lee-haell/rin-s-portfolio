@@ -49,6 +49,32 @@ body, .wrap {
 }
 
 
+/* IR기법 */
+.ir {
+   display: block; 
+   font-size: 0;
+   line-height: 0;
+   text-indent: -9999px;
+   overflow: hidden;
+}
+
+
+/* 스크롤바 */
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    width: 30%;
+    border-radius: 10px;
+    background-color: var(--pointColor);
+}
+
+body::-webkit-scrollbar-track {
+    background-color: var(--marinColor);
+}
+
+
 /* 컬러값 */
 :root {
     --mainColor: #0D221B;

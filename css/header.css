@@ -12,9 +12,10 @@
 }
 
 .headerWrap .logo {
-    font-size: 2.4rem;
-    font-weight: 700;
-    font-family: 'EB Garamond', sans-serif;
-    color: var(--mainColor);
+    position: relative;
+    width: 25px;
+    height: 25px;
+    background: url('/img/img-logo.png') no-repeat center center;
+    background-size: cover;
     cursor: pointer;
 }

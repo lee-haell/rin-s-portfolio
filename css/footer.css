@@ -33,7 +33,7 @@
 }
 
 .infoWrap .infoList:nth-child(2) .infoData {
-    font-family: 'EB Garamond', sans-serif;
+    font-family: 'roxboroughCf', sans-serif;
     font-style: italic;
     font-weight: 600;
     font-size: 2rem;
@@ -41,7 +41,8 @@
 }
 
 .infoWrap .infoList:last-child {
-    font-size: 1.4rem;
     padding-top: 30px;
-    color: var(--mainColor);
+    font-size: 1.4rem;
+    font-family: 'avenirNextW04', sans-serif;
+    color: var(--textColor);
 }
