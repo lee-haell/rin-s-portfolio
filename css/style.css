@@ -10,7 +10,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: #faf6ed;
+    background-color: var(--mainColor);
 }
 
 
@@ -122,7 +122,7 @@
 
 .book .front li:last-child {
     border-radius: 10px;
-    background-color: var(--mainColor);
+    background-color: var(--textColor);
 }
 
 .book .coverTitleWrap {
@@ -133,30 +133,44 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    border-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    background-color: #202020;
+    border-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: var(--textColor);
     z-index: -1;
 }
 
+.book .frontCover::before,
+.book .frontCover::after {
+    content:'';
+    display: block;
+    position: absolute;
+}
+
+.book .frontCover::before {
+    width: 100px;
+    height: 100px;
+
+}
+
 .imgAvatar {
+    display: none;
     width: 150px;
     padding-top: 30px;;
 }
 
 .frontCover .coverTitle {
     position: absolute;
-    bottom: 40px;
+    top: 53%;
     left: 50%;
     width: 100%;
     letter-spacing: 2px;
-    font-size: 2rem;
-    font-weight: 400;
-    font-family: 'EB Garamond', sans-serif;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    transform: translateX(-50%);
+    font-size: 1.8rem;
+    font-family: 'roxboroughCf', sans-serif;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: var(--mainColor);
 }
 
 .book .page, 
@@ -227,8 +241,8 @@
 
 .book .back li {
     width: 97.5% !important;
-    border-radius: 10px;
-    background-color: var(--mainColor);
+    border-radius: 5px;
+    background-color: var(--textColor);
 }
 
 .book.openActive1 {
@@ -310,11 +324,11 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     font-weight: 600;
     letter-spacing: 2px;
     color: var(--pointColor);
-    font-family: 'EB Garamond', sans-serif;
+    font-family: 'roxboroughCf', sans-serif;
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
