@@ -14,15 +14,40 @@ html, body, button {
     --white: #fff;
 }
 
-.menuWrap, .inner {
+.inner {
+    position: relative;
     background-color: var(--black);
+    background-image:
+    linear-gradient(90deg, #cdcccc 0px, #cdcccc 1px, transparent 1px, transparent 99px,  transparent 100px),
+    linear-gradient(#cdcccc 0px, #cdcccc 1px, transparent 1px, transparent 99px,  transparent 100px),
+    linear-gradient(#e0e0e0 0px, #e0e0e0 1px, transparent 1px, transparent 99px,  transparent 100px),
+    linear-gradient(90deg, #e0e0e0 0px, #e0e0e0 1px, transparent 1px, transparent 99px,  transparent 100px),
+    linear-gradient(transparent 0px, transparent 5px, #f6f6f6 5px, #f6f6f6 95px, transparent 95px, transparent 100px),
+    linear-gradient(90deg, #e0e0e0 0px, #e0e0e0 1px, transparent 1px, transparent 99px, #e0e0e0 99px, #e0e0e0 100px),
+    linear-gradient(90deg, transparent 0px, transparent 5px, #f6f6f6 5px, #f6f6f6 95px, transparent 95px, transparent 100px),
+    linear-gradient(transparent 0px, transparent 1px, #f6f6f6 1px, #f6f6f6 99px, transparent 99px, transparent 100px),
+    linear-gradient(#cdcccc, #cdcccc);
+    background-size: 100px 100%, 100% 100px, 100% 10px, 10px 100%, 100% 100px, 100px 100%, 100px 100%, 100px 100px, 100px 100px;
+}
+
+.inner::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--black);
+    opacity: .9;
+    z-index: 1;
 }
 
 
 /* 메뉴 영역 */
 .menuWrap {
     position: fixed;
-    top: 30px;
+    bottom: 30px;
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
@@ -70,24 +95,141 @@ html, body, button {
     padding: 5em;
     height: 200vh;
     color: var(--white);
+    position: relative;
+    z-index: 5;
+}
+
+.circleWrap {
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.circleWrap .circle {
+    position: relative;
+    width: 15vw;
+    height: 15vw;
+    background-color: #222;
+    border-radius: 50%;
+    filter: blur(15px);
+}
+
+.circleWrap .circle::before, .circleWrap .circle::after {
+    position: absolute;
+    content : "";
+    top: -5%;
+    left: -5%;
+    height:110%;
+    width:110%;
+    border-radius:50%;
+    opacity:0.5;
+    filter: blur(60px);
+}
+
+.circleWrap .circle::before {
+    background-color:#ff0072;
+    z-index: -2;
+    animation : backglow1 5s ease infinite;
+}
+
+.circleWrap .circle::after {
+    background-color:#00ffff;
+    z-index: -1;
+    animation : backglow2 5s ease infinite;
+}
+
+@keyframes backglow1 {
+    0% {
+        transform: translate(10%, 10%) scale(1);
+        opacity:0.5;
+    }
+    25% {
+        transform: translate(-10%, 10%) scale(0.8);
+        opacity:0.5;
+    }
+    50% {
+        transform: translate(-10%, -10%) scale(1.2);
+        opacity:0.8;
+    }
+    75% {
+        transform: translate(10%, -10%) scale(1.1);
+        opacity:0.2;
+    }
+    100% {
+        transform: translate(10%, 10%) scale(1);
+        opacity:0.5;
+    }
+}
+
+@keyframes backglow2 {
+    0% {
+        transform: translate(-10%, -10%) scale(1);
+        opacity:0.5;
+    }
+    25% {
+        transform: translate(10%, -10%) scale(0.8);
+        opacity:0.5;
+    }
+    50% {
+        transform: translate(10%, 10%) scale(1.2);
+        opacity:0.8;
+    }
+    75% {
+        transform: translate(-10%, 10%) scale(1.1);
+        opacity:0.2;
+    }
+    100% {
+        transform: translate(-10%, -10%) scale(1);
+        opacity:0.5;
+    }
+}
+
+.circleWrap .circle.scroll::before {
+    animation : backglow3 5s ease infinite;
+}
+
+@keyframes backglow3 {
+    0% {
+        transform: translate(10%, 10%) scale(2.5);
+        opacity:0.3;
+    }
+    25% {
+        transform: translate(-10%, 10%) scale(1.2);
+        opacity:0.3;
+    }
+    50% {
+        transform: translate(-10%, -10%) scale(2);
+        opacity:0.5;
+    }
+    75% {
+        transform: translate(10%, -10%) scale(1.2);
+        opacity:0.1;
+    }
+    100% {
+        transform: translate(10%, 10%) scale(2.5);
+        opacity:0.3;
+    }
 }
 
 .introWrap .intro {
     position: relative;
     text-align: center;
+    font-size: 40px;
+    font-weight: 600;
 }
 
 .introWrap .intro:nth-child(1) {
     top: 10%;
-    left: 30px;
-    font-size: 40px;
+    left: 40px;
 }
 
 .introWrap .intro:nth-child(2) {
     top: 12%;
     left: -10px;
-    font-size: 40px;
-    font-weight: 600;
     font-style: italic;
 }
 
@@ -101,8 +243,6 @@ html, body, button {
 
 .introWrap .intro:nth-child(4) {
     top: 15%;
-    left: 80px;
-    font-size: 50px;
-    font-weight: 600;
+    left: 70px;
 }
 
