@@ -31,12 +31,12 @@
         <div data-scroll-container class="inner">
             <section data-scroll-section class="introWrap">
                 <h1 data-scroll data-scroll-direction="horizontal" data-scroll-speed="2" class="intro">안녕하세요,</h1>
-                <h1 data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3" class="intro">사용자 친화적이고 아름다운 UI에 관심있는</h1>
+                <p data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3" class="intro">사용자 친화적이고 아름다운 UI에 관심있는</p>
                 <p data-scroll data-scroll-direction="horizontal" data-scroll-speed="4" class="intro">Markup Developer</p>
                 <p data-scroll data-scroll-direction="horizontal" data-scroll-speed="-5" class="intro">해린입니다.</p>
             </section>
             <div class="circleWrap">
-                <div class="circle"></div>
+                <div data-scroll data-scroll-class="scroll" class="circle"></div>
             </div>
         </div>
         <!-- 메인 끝 -->
@@ -53,15 +53,17 @@
     </div>
     <!-- js 시작 -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
     <script src="/js/locomotive-scroll.min.js"></script>
     <script src="/js/again.js"></script>
-    <script>
+    <script src="/js/scrolltrigger.js"></script>
+    <!-- <script>
         const scroller = new LocomotiveScroll({
             el: document.querySelector('[data-scroll-container]'),
             smooth: true
         });
-    </script>
-    <!-- <script type="text/javascript" src="/js/again.js"></script> -->
+    </script> -->
     <!-- js 끝 -->
 </body>
 </html>

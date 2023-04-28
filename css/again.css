@@ -39,7 +39,7 @@ html, body, button {
     width: 100%;
     height: 100%;
     background-color: var(--black);
-    opacity: .9;
+    opacity: .8;
     z-index: 1;
 }
 
@@ -99,6 +99,8 @@ html, body, button {
     z-index: 5;
 }
 
+
+/* 원형 animation 영역 */
 .circleWrap {
     position: absolute;
     top: 22%;
@@ -113,7 +115,7 @@ html, body, button {
     position: relative;
     width: 15vw;
     height: 15vw;
-    background-color: #222;
+    background-color: #2e2e2e;
     border-radius: 50%;
     filter: blur(15px);
 }
@@ -188,31 +190,14 @@ html, body, button {
     }
 }
 
-.circleWrap .circle.scroll::before {
-    animation : backglow3 5s ease infinite;
-}
+/* .circleWrap .circle.scroll {
+    width: 40vw;
+    height: 40vw;
+} */
 
-@keyframes backglow3 {
-    0% {
-        transform: translate(10%, 10%) scale(2.5);
-        opacity:0.3;
-    }
-    25% {
-        transform: translate(-10%, 10%) scale(1.2);
-        opacity:0.3;
-    }
-    50% {
-        transform: translate(-10%, -10%) scale(2);
-        opacity:0.5;
-    }
-    75% {
-        transform: translate(10%, -10%) scale(1.2);
-        opacity:0.1;
-    }
-    100% {
-        transform: translate(10%, 10%) scale(2.5);
-        opacity:0.3;
-    }
+.scroll {
+    width: 40vw;
+    height: 40vw;
 }
 
 .introWrap .intro {

@@ -10,17 +10,18 @@ $(function(){
 
 
   /* scroll event */
-  $(window).scroll(function(){
-    const circle = $('.circle');
-    let browserHeight = window.innerHeight;
-    const scrollValue = $(document).scrollTop();
+  // $(window).scroll(function(){
+  //   const circle = $('.circle');
+  //   let browserHeight = window.innerHeight;
+  //   const scrollValue = $(document).scrollTop();
 
-    if(scrollValue >= browserHeight/100){
-      circle.addClass('scroll');
-    }
+  //   console.log(scrollValue);
 
-    console.log(scrollValue);
-  });
+  //   if(scrollValue >= browserHeight/2){
+  //     circle.addClass('scroll');
+  //   }
+
+  // });
 
 
 
