@@ -11,53 +11,120 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/css/locomotive-scroll.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> 
     <link rel="stylesheet" type="text/css" href="/css/reset.css">
     <link rel="stylesheet" type="text/css" href="/css/again.css">
 </head>
 <body>
     <div class="wrap">
         <!-- 메뉴 시작 -->
-        <nav class="menuWrap">
+        <!-- <nav class="menuWrap">
             <ul class="menuList">
                 <li class="menu active"><a href="#" class="menuText">HOME</a></li>
                 <li class="menu"><a href="#" class="menuText">ABOUT</a></li>
                 <li class="menu"><a href="#" class="menuText">WORK</a></li>
                 <li class="menu"><a href="#" class="menuText">CONTACT</a></li>
             </ul>
-        </nav>
+        </nav> -->
         <!-- 메뉴 끝 -->
-        <!-- 메인 시작 -->
-        <div data-scroll-container class="inner">
-            <section data-scroll-section class="introWrap">
-                <h1 data-scroll data-scroll-direction="horizontal" data-scroll-speed="2" class="intro">안녕하세요,</h1>
-                <p data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3" class="intro">사용자 친화적이고 아름다운 UI에 관심있는</p>
-                <p data-scroll data-scroll-direction="horizontal" data-scroll-speed="4" class="intro">Markup Developer</p>
-                <p data-scroll data-scroll-direction="horizontal" data-scroll-speed="-5" class="intro">해린입니다.</p>
-            </section>
-            <div class="circleWrap">
-                <div data-scroll data-scroll-class="scroll" class="circle"></div>
+
+        <div class="inner" data-scroll-container>
+            <!-- 메인 시작 -->
+            <div class="introWrap" data-scroll data-scroll-speed="6">
+                <div class="introListWrap">
+                    <div class="introList">
+                        <p class="intro">안녕하세요,</p>
+                        <p class="intro">사용자 친화적이고 아름다운 UI에 관심있는</p>
+                        <p class="intro" data-scroll data-scroll-speed="2"><span class="italic">Web Publisher,</span> 해린입니다.</p>
+                    </div>
+                </div>
+                <div class="circleArea" data-scroll data-scroll-speed="-10">
+                    <div class="circleWrap">
+                        <div class="circle"></div>
+                    </div>
+                </div>
             </div>
+            <div class="subIntroWrap" data-scroll data-scroll-speed="3">
+                <div class="subIntroInner">
+                    <p class="subIntro" data-scroll data-scroll-speed="3" data-scroll-direction="horizontal"><span class="keyword">소통 경험</span> 기획 / 디자인 / 프론트 / 백엔드 개발자와 소통한 경험이 있습니다.</p>
+                    <p class="subIntro"><span class="keyword"></span> 귀와 마음을 열어 스스로의 부족함을 인정하고 개선하는 자세를 기본으로,</p>
+                    <p class="subIntro">함께 좋은 서비스를 만들어가는 것이 가치있다고 생각합니다.</p>
+                </div>
+            </div>
+            <!-- 메인 끝 -->
+            <!-- 텍스트 시작 -->
+            <div class="sectionWrap">
+                <div class="wordList">
+                    <span class="word" data-scroll data-scroll-speed="2">M</span>
+                    <span class="word" data-scroll data-scroll-speed="-1">A</span>
+                    <span class="word" data-scroll data-scroll-speed="3">R</span>
+                    <span class="word" data-scroll data-scroll-speed="-1.3">K</span>
+                    <span class="word" data-scroll data-scroll-speed="3">U</span>
+                    <span class="word" data-scroll data-scroll-speed="-1">P</span>
+                </div>
+            </div>
+            <!-- 텍스트 끝 -->
+            <!-- 안내문 시작 -->
+            <div class="workTitleWrap" data-scroll data-scroll-speed="2">
+                <p class="workTitle" data-scroll data-scroll-speed="-2" data-scroll-direction="horizontal">저는 이런 작업들을 해봤어요-</p>
+                <p class="workTitle" data-scroll data-scroll-speed="2" data-scroll-direction="horizontal">좀 더 스크롤 해주세요!</p>
+            </div>
+            <!-- 안내문 끝 -->
+            <!-- 포폴 시작 -->
+            <div class="workStickyWrap">
+                <div id="workSection1" class="workSection">
+                    <div class="workLogoWrap" data-scroll data-scroll-sticky data-scroll-target="#workSection1">
+                        <h1 class="workLogo">Publish</h1>
+                        <p class="work" data-scroll data-scroll-speed="2" data-scroll-position="bottom">블록체인 미디어 스타트업에서 퍼블리싱을-</p> 
+                    </div>
+                </div>
+            </div>
+            <div class="workImgWrap">
+                <p class="workImgTitle">위와 같은 프로젝트를 진행했어요-</p>
+                <div class="workImgList">
+                    <img src="" alt="" class="workImg">
+                    <img src="" alt="" class="workImg">
+                    <img src="" alt="" class="workImg">
+                    <img src="" alt="" class="workImg">
+                    <img src="" alt="" class="workImg">
+                    <img src="" alt="" class="workImg">
+                </div>
+            </div>
+            <div class="workStickyWrap">
+                <div id="workSection2" class="workSection">
+                    <div class="workLogoWrap" data-scroll data-scroll-sticky data-scroll-target="#workSection2">
+                        <h1 class="workLogo">Toy Project</h1>
+                        <p class="work" data-scroll data-scroll-speed="2" data-scroll-position="bottom">즐겁게 작업한 토이 프로젝트-</p>
+                    </div>
+                </div>
+            </div>
+            <div class="workImgWrap">
+                <p class="workImgTitle">위와 같은 프로젝트를 진행했어요-</p>
+                <div class="workImgList">
+                    <img src="" alt="" class="workImg">
+                </div>
+            </div>
+            <!-- 포폴 끝 -->
+            <!-- 푸터 시작 -->
+            <div class="footerWrap">
+                <div class="footerImgWrap">
+                    <img src="" alt="" class="footerImg">
+                </div>
+                <div class="footerTextWrap">
+                    <h3 class="footerText" data-scroll data-scroll-speed="6">함께할 준비가 되었습니다:</h3>
+                    <p class="footerText" data-scroll data-scroll-speed="10" data-scroll-position="bottom">haeeeell@gmail.com</p>
+                </div>
+            </div>
+            <!-- 푸터 끝 -->
         </div>
-        <!-- 메인 끝 -->
-        <!-- 섹션 시작 -->
-        <div class="sectionWrap">
-            <article class="articleWrap"></article>
-            <article class="articleWrap"></article>
-            <article class="articleWrap"></article>
-        </div>
-        <!-- 섹션 끝 -->
-        <!-- 푸터 시작 -->
-        <footer class="footerWrap"></footer>
-        <!-- 푸터 끝 -->
     </div>
     <!-- js 시작 -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
-    <script src="/js/locomotive-scroll.min.js"></script>
-    <script src="/js/again.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
     <script src="/js/scrolltrigger.js"></script>
+    <script src="/js/again.js"></script>
     <!-- <script>
         const scroller = new LocomotiveScroll({
             el: document.querySelector('[data-scroll-container]'),

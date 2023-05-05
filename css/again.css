@@ -9,28 +9,25 @@ html, body, button {
     display: none;
 }
 
+.italic {
+    font-style: italic;
+}
+
 :root {
     --black: #222;
     --white: #fff;
 }
 
-.inner {
-    position: relative;
+.wrap {
+    color: var(--white);
     background-color: var(--black);
-    background-image:
-    linear-gradient(90deg, #cdcccc 0px, #cdcccc 1px, transparent 1px, transparent 99px,  transparent 100px),
-    linear-gradient(#cdcccc 0px, #cdcccc 1px, transparent 1px, transparent 99px,  transparent 100px),
-    linear-gradient(#e0e0e0 0px, #e0e0e0 1px, transparent 1px, transparent 99px,  transparent 100px),
-    linear-gradient(90deg, #e0e0e0 0px, #e0e0e0 1px, transparent 1px, transparent 99px,  transparent 100px),
-    linear-gradient(transparent 0px, transparent 5px, #f6f6f6 5px, #f6f6f6 95px, transparent 95px, transparent 100px),
-    linear-gradient(90deg, #e0e0e0 0px, #e0e0e0 1px, transparent 1px, transparent 99px, #e0e0e0 99px, #e0e0e0 100px),
-    linear-gradient(90deg, transparent 0px, transparent 5px, #f6f6f6 5px, #f6f6f6 95px, transparent 95px, transparent 100px),
-    linear-gradient(transparent 0px, transparent 1px, #f6f6f6 1px, #f6f6f6 99px, transparent 99px, transparent 100px),
-    linear-gradient(#cdcccc, #cdcccc);
-    background-size: 100px 100%, 100% 100px, 100% 10px, 10px 100%, 100% 100px, 100px 100%, 100px 100%, 100px 100px, 100px 100px;
 }
 
-.inner::after {
+.inner {
+    position: relative;
+}
+
+/* .inner::after {
     content: '';
     display: block;
     position: absolute;
@@ -41,11 +38,11 @@ html, body, button {
     background-color: var(--black);
     opacity: .8;
     z-index: 1;
-}
+} */
 
 
 /* 메뉴 영역 */
-.menuWrap {
+/* .menuWrap {
     position: fixed;
     bottom: 30px;
     left: 50%;
@@ -87,23 +84,64 @@ html, body, button {
 
 .menuList .menu.active .menuText {
     color: var(--white);
-}
+} */
 
 
 /* 메인 영역 */
 .introWrap {
-    padding: 5em;
-    height: 200vh;
-    color: var(--white);
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% auto;
+}
+
+.introListWrap {
     position: relative;
-    z-index: 5;
+    padding: 8em;
+}
+
+.introListWrap .introList {
+    position: absolute;
+    top: 50%;
+    line-height: 1.6;
+    border-radius: 20px;
+    padding: 4em;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.introListWrap .introList .intro {
+    font-size: 1.3em;
+    line-height: 2;
+}
+
+.introListWrap .introList .italic {
+    color: #00ffff;
+    margin-left: -5px;
+}
+
+.subIntroWrap {
+    width: 50%;
+    height: 100vh;
+    padding: 8em;
+}
+
+.subIntroWrap .subIntro {
+    font-weight: 400;
+    line-height: 1.6;
+    padding: 2em 0;
+    border-bottom: 1px solid #e0e0e0;
 }
 
 
 /* 원형 animation 영역 */
-.circleWrap {
+.circleArea {
+    position: relative;
+}
+
+.circleArea .circleWrap {
     position: absolute;
-    top: 22%;
+    top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -120,7 +158,8 @@ html, body, button {
     filter: blur(15px);
 }
 
-.circleWrap .circle::before, .circleWrap .circle::after {
+.circleWrap .circle::before, 
+.circleWrap .circle::after {
     position: absolute;
     content : "";
     top: -5%;
@@ -193,41 +232,39 @@ html, body, button {
 /* .circleWrap .circle.scroll {
     width: 40vw;
     height: 40vw;
-} */
+}
 
 .scroll {
     width: 40vw;
     height: 40vw;
-}
+} */
 
-.introWrap .intro {
-    position: relative;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 600;
-}
+/* .introWrap .intro:last-child {
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    transform: scaleX(-1);
+} */
 
-.introWrap .intro:nth-child(1) {
-    top: 10%;
-    left: 40px;
+/* .introWrap .intro:nth-child(1) {
+    animation: textUp .5s ease-out;
 }
 
 .introWrap .intro:nth-child(2) {
-    top: 12%;
-    left: -10px;
-    font-style: italic;
+    animation: textUp 1s ease-out;
 }
 
 .introWrap .intro:nth-child(3) {
-    top: 13%;
-    left: -10px;
-    font-size: 60px;
-    font-weight: 600;
-    font-style: italic;
+    animation: textUp 1.5s ease-out;
 }
 
-.introWrap .intro:nth-child(4) {
-    top: 15%;
-    left: 70px;
-}
+@keyframes textUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+} */
 
