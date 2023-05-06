@@ -16,6 +16,8 @@ html, body, button {
 :root {
     --black: #222;
     --white: #fff;
+    --blue: #00ffff;
+    --pink: #ff0072;
 }
 
 .wrap {
@@ -87,6 +89,46 @@ html, body, button {
 } */
 
 
+/* 헤더 영역 */
+.logoWrap, .iconWrap {
+    position: fixed;
+    z-index: 999;
+}
+
+.logoWrap {
+    left: 1em;
+    top: 1em;
+    font-size: 1.3em;
+    transition: all .5s ease-in-out;
+    text-shadow: 0 0 0 transparent,0 0 0 transparent;
+    color: var(--blue);
+    overflow: visible;
+}
+
+.logoWrap:hover, .iconWrap .icon:hover {
+    color:white;
+    text-shadow: 0 0 10px var(--pink),0 0 50px var(--pink);
+}
+
+.iconWrap {
+    right: 1em;
+    bottom: 1em;
+}
+
+.iconWrap .icon {
+    margin: 0 10px;
+    font-size: 1.3em;
+    color: var(--blue);
+    -webkit-transition: all .5s ease-out;
+    -ms-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+}
+
+/* .iconWrap .icon:hover {
+    color: var(--pink);
+} */
+
+
 /* 메인 영역 */
 .introWrap {
     height: 100vh;
@@ -121,8 +163,8 @@ html, body, button {
 }
 
 .subIntroWrap {
-    width: 50%;
-    height: 100vh;
+    width: 100%;
+    height: 40vh;
     padding: 8em;
 }
 
@@ -131,6 +173,27 @@ html, body, button {
     line-height: 1.6;
     padding: 2em 0;
     border-bottom: 1px solid #e0e0e0;
+}
+
+.subIntroWrap .keyword {
+    position: relative;
+    font-weight: 600;
+    padding-right: 2.8em;
+    color: var(--pink);
+}
+
+.subIntroWrap .keyword::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 50px;
+    height: 1px;
+    background-color: var(--white);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 
@@ -268,3 +331,203 @@ html, body, button {
     }
 } */
 
+
+/* 텍스트 애니메이션 영역 */
+.sectionWrap {
+    width: 100%;
+    height: 60vh;
+    text-align: center;
+    display: grid;
+    align-items: center;
+}
+
+.sectionWrap .word {
+    opacity: 0;
+    display: inline-block;
+    font-size: 5em;
+    padding: 0 0.5em;
+    color: var(--black);
+    text-shadow: -1px 0 var(--white), 0 1px var(--blue), 1px 0 var(--pink), 0 -1px var(--white);
+    transition: all 1s ease-out;
+}
+
+.sectionWrap .word.opacity {
+    opacity: 1;
+}
+
+
+/* 안내문 영역 */
+.workTitleWrap {
+    position: relative;
+    margin: 20vh 0 30vh 0;
+    text-align: center;
+    z-index: 1;
+}
+
+.workTitleWrap .workTitle {
+    font-size: 2em;
+    font-weight: lighter;
+    line-height: 3;
+}
+
+
+/* 포폴 영역 */
+.workStickyWrap {
+    height: 100%;
+    display: grid;
+    padding-bottom: 30vh;
+    grid-template-columns: 40% auto;
+}
+
+.workStickyWrap .workLogoWrap {
+    padding-left: 2em;
+}
+
+.workStickyWrap .workLogo {
+    font-size: 5em;
+    padding-top: 1em;
+}
+
+.workStickyWrap .work {
+    margin-top: 15vh;
+}
+
+.workStickyWrap .workBtn {
+    display: block;
+    padding-top: 10vh;
+}
+
+.workImgWrap {
+    margin-top: 5em;
+}
+
+.workImgList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 2em;
+    grid-gap: 1em;
+    margin-top: 16px;
+}
+
+.workImgList .workLink {
+    position: relative;
+    display: block;
+    text-align: center;
+    padding: 30px 0;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    /* height: 147px;
+    overflow: hidden; */
+}
+
+.workImgList .workLink:hover::before {
+    opacity: 0.8;
+}
+
+.workImgList .workLink::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--white);
+    -webkit-transition: all .5s ease-out;
+    -ms-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+    opacity: 0;
+}
+
+.workImgList .workImg {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.workImgList .workSubTitleWrap {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all .5s ease-out;
+    -ms-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+}
+
+.workImgList .workLink:hover .workSubTitleWrap {
+    opacity: 1;
+}
+
+.workImgList .workSubTitleWrap .workSubTitle {
+    margin: 1em auto;
+    background-color: var(--black);
+    border-radius: 20px;
+    padding: 5px 20px;
+    color: var(--white);
+    font-size: 1em;
+    font-weight: lighter;
+    width: fit-content;
+}
+
+/* .workStickyWrap.sticky {
+    padding-bottom: 40vh;
+} */
+
+.workStickyWrap.sticky .work {
+    margin-top: 0;
+}
+
+
+/* 푸터 */
+.workTitleWrap2 {
+    margin: 0;
+    /* position: absolute;
+    bottom: 0;
+    left: 50%; */
+}
+
+.workTitleWrap2 .workTitle {
+    writing-mode: vertical-rl;
+    text-align: center;
+    margin: 0px auto;
+    font-size: 1em;
+}
+
+.footerWrap {
+    position: relative;
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+.footerWrap .footerTextWrap {
+    position: relative;
+    z-index: 1;
+}
+
+.footerWrap .footerTextWrap .mail {
+    font-size: 3em;
+}
+
+.footerWrap .footerTextWrap .footerTextWord {
+    display: inline-block;
+}
+
+/* .footerWrap .circleArea {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+} */
+
+.footerWrap .circleWrap {
+    z-index: -1;
+}
+
+.footerWrap .circleWrap .circle {
+    width: 35vw;
+    height: 35vw;
+}

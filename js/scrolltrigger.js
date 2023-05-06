@@ -1,15 +1,29 @@
 // ScrollTrigger 초기화
 // gsap.registerPlugin(ScrollTrigger);
 
-const color = "opacity-0";
+const body = document.body;
 
 // locomotive-scroll 초기화
 const scroller = new LocomotiveScroll({
-  el: document.querySelector('[data-scroll-container]'),
+  el: document.querySelector("[data-scroll-container]"),
   smooth: true,
   tablet: { smooth: true },
   smartphone: { smooth: true }
 });
+
+// scroller.on("scroll", (instance) => {
+//   const bgSection = document.querySelector(".sectionWrap .word.is-inview");
+
+//   if(bgSection){
+//     console.log(111);
+//     const parentSection = bgSection.parentElement.parentElement;
+//     body.style.backgroundColor = parentSection.dataset.bgColor;
+//   } else {
+//     body.style.backgroundColor = "";
+//     console.log(222);
+//   }
+
+// });
 
 
 
