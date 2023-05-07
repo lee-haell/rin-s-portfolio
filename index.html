@@ -206,19 +206,20 @@
         const scroller = new LocomotiveScroll({
             el: document.querySelector("[data-scroll-container]"),
             smooth: true,
-            getDirection: true,
-            tablet: { 
-                breakpoint: 0,
-                smooth: true,
-                inertia: 0.8,
-                getDirection: true,
-            },
-            smartphone: {
-                breakpoint: 0,
-                smooth: true,
-                inertia: 0.8,
-                getDirection: true,
-            }
+            smoothMobile: true,
+            // getDirection: true,
+            // tablet: { 
+            //     breakpoint: 0,
+            //     smooth: true,
+            //     inertia: 0.8,
+            //     getDirection: true,
+            // },
+            // smartphone: {
+            //     breakpoint: 0,
+            //     smooth: true,
+            //     inertia: 0.8,
+            //     getDirection: true,
+            // }
         });
     </script>
     <!-- js 끝 -->
