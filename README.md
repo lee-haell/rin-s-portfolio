@@ -1,6 +1,6 @@
 # Rin's Web Diary
 
-<a href="mailto:haeeeell@gmail.com">haeeeell@gmail.com</a><br>
+<a href="https://rinswebdiary.netlify.app/">포트폴리오 바로가기</a><br>
 _UI Markup Developer_<br><br>
 
 ## 프로젝트
