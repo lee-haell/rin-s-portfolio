@@ -15,9 +15,8 @@ _UI Markup Developer_<br><br>
   - reset.css
   - common.css
   - style.css
-  - header.css
-  - footer.css
   - media.css
+  - locomotive-scroll.css
 - img/
 - js/
   - app.js

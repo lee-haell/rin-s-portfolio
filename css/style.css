@@ -75,7 +75,7 @@ html, body, button {
 
 .introListWrap {
     position: relative;
-    padding: 8em;
+    padding: 8vw;
     cursor: pointer;
 }
 
@@ -84,7 +84,7 @@ html, body, button {
     top: 50%;
     line-height: 1.6;
     border-radius: 20px;
-    padding: 4em;
+    padding: 4vw;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -154,7 +154,7 @@ html, body, button {
 .subIntroWrap {
     width: 100%;
     height: 40vh;
-    padding: 8em;
+    padding: 8vw;
 }
 
 .subIntroWrap .subIntro {
@@ -341,7 +341,7 @@ html, body, button {
 .sectionWrap .word {
     opacity: 0;
     display: inline-block;
-    font-size: 5em;
+    font-size: 5vw;
     padding: 0 0.5em;
     color: var(--black);
     text-shadow: -1px 0 var(--white), 0 1px var(--blue), 1px 0 var(--pink), 0 -1px var(--white);
@@ -362,7 +362,7 @@ html, body, button {
 }
 
 .workTitleWrap .workTitle {
-    font-size: 2em;
+    font-size: 2vw;
     font-weight: lighter;
     line-height: 3;
 }
@@ -372,7 +372,7 @@ html, body, button {
 .workStickyWrap {
     height: 100%;
     display: grid;
-    padding-bottom: 30vh;
+    padding-bottom: 30vw;
     grid-template-columns: 40% auto;
 }
 
@@ -381,12 +381,12 @@ html, body, button {
 }
 
 .workStickyWrap .workLogo {
-    font-size: 5em;
+    font-size: 5vw;
     padding-top: 1em;
 }
 
 .workStickyWrap .work {
-    margin-top: 15vh;
+    margin-top: 15vw;
 }
 
 .workStickyWrap .workBtn {
@@ -395,13 +395,13 @@ html, body, button {
 }
 
 .workImgWrap {
-    margin-top: 5em;
+    margin-top: 5vw;
 }
 
 .workImgList {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 0 2em;
+    padding: 0 2vw;
     grid-gap: 1em;
     margin-top: 16px;
 }
@@ -500,7 +500,7 @@ html, body, button {
 }
 
 .footerWrap .footerTextWrap .mail {
-    font-size: 3em;
+    font-size: 3vw;
     -webkit-transition: all .5s ease-out;
     -ms-transition: all .5s ease-out;
     transition: all .5s ease-out;

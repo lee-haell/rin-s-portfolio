@@ -2,156 +2,186 @@
 
 /* 반응형 */
 /* laptop size - 1024px */
-@media screen and (max-width: 1024px) {
-    .wrap .inner {
-        max-width: 768px;
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .iconWrap .icon {
+        margin: 0 8px;
+        font-size: 1em;
     }
 
-    .coverStrWrap .coverStrInner {
-        width: 450px;
-        height: 450px;
+    .introListWrap .introList .intro {
+        font-size: 1em;
     }
 
-    .coverStrWrap .text .textSplit {
-        transform-origin: 0 225px;
+    .workStickyWrap .work {
+        font-size: .8em;
     }
 
-    .bookCoverWrap .book {
-        width: 170px;
-        height: 240px;
-    }
-
-    .imgAvatar {
-        width: 130px;
-    }
-
-    .frontCover .coverTitle {
-        font-size: 1.6rem;
-    }
-
-    .introWrap {
-        padding: 100px 0;
-    }
-
-    .itemWrap {
-        justify-items: center;
-    }
-
-    .book .page .openBtn {
-        font-size: 2rem;
-    }
-
-    .introWrap .mainIntro {
-        font-size: 1.6rem;
-    }
-
-    .introPoint {
-        font-size: 3rem;
-    }
-
-    .articleWrap .title {
-        font-size: 1.8rem;
+    .footerWrap .footerTextWrap {
+        top: 50%;
     }
 }
 
 /* tablet size - 768px */
 @media screen and (max-width: 768px) {
-    .wrap .inner {
-        max-width: 320px;
+     .subIntroInner {
+        font-size: .8em;   
     }
 
-    .coverStrWrap .coverStrInner {
-        width: 400px;
-        height: 400px;
+    .subIntroWrap .keyword::after {
+        width: 40px;
     }
 
-    .coverStrWrap .text .textSplit {
-        transform-origin: 0 200px;
+    .workTitleWrap {
+        margin: 10vh 0 20vh 0;
     }
 
-    .headerWrap .headerInner {
-        justify-content: center;
+    .workStickyWrap {
+        display: block;
     }
 
-    .introWrap .mainIntro {
-        font-size: 1.4rem;
+    .workStickyWrap .work {
+        margin-top: 0;
+    }
+
+    .workImgWrap {
+        margin-top: 8vw;
+    }
+
+    .workImgList {
+        padding: 0 4vw;
+    }
+
+    .workImgList .workLink {
+        height: 130px;
+        padding: 0;
+    }
+
+    .workImgList {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+    .workImgList .workSubTitleWrap .workSubTitle {
+        font-size: .8em;
+    }
+
+    .workStickyWrap {
+        padding-bottom: 20vw;
+    } 
+
+    .logo a {
+        font-size: .6em;
     }
 
     .introWrap {
-        padding: 80px 0;
+        display: block;
     }
 
-    .introPoint {
-        font-size: 1.8rem;
+    .introListWrap {
+        top: 50%;
     }
 
-    .introWrap .point {
-        width: 100px;
-        font-size: 1.4rem;
-        margin: 30px auto 0 auto;
+    .introListWrap .introList .intro {
+        font-size: .8em;
     }
 
-    .articleWrap .title {
-        font-size: 1.6rem;
+    .circleArea {
+        top: 30%;
+        z-index: -1;
     }
 
-    .infoWrap .infoList .infoHover {
-        font-size: 2rem;
+    .subIntroWrap {
+        height: 20vh;
     }
 
-    .infoWrap .infoList:nth-child(2) .infoData {
-        font-size: 1.6rem;
+    .subIntroWrap .keyword::after {
+        width: 30px;
     }
 
-    .infoWrap .infoList:last-child {
-        font-size: 1.2rem;
+    .sectionWrap {
+        height: 40vh;
     }
 
-    .footerWrap {
-        padding: 50px 0;
+    .workTitleWrap .workTitle {
+        font-size: .8em;
+    }
+
+    .workImgList .workSubTitleWrap .workSubTitle {
+        font-size: .6em;
+    }
+
+    .workTitleWrap2 .workTitle {
+        font-size: .8em;
+    }
+
+    .footerWrap .circleArea, .footerWrap .footerTextWrap {
+        top: 40%;
+    }
+
+    .iconWrap {
+        right: 0.8em;
+        bottom: 0.8em;
+    }
+
+    .iconWrap .icon {
+        margin: 0 6px;
+        font-size: .6em;
     }
 }
 
 /* mobile size - 320px */
-@media screen and (max-width: 320px) {
-    .coverStrWrap .coverStrInner {
-        width: 300px;
-        height: 300px;
+/* @media screen and (max-width: 320px) {
+    .logo a {
+        font-size: .6em;
     }
 
-    .coverStrWrap .text .textSplit {
-        transform-origin: 0 150px;
+    .introWrap {
+        display: block;
     }
 
-    .bookCoverWrap .book {
-        width: 130px;
-        height: 200px;
+    .introListWrap {
+        top: 50%;
     }
 
-    .imgAvatar {
-        width: 100px;
+    .circleArea {
+        top: 30%;
+        z-index: -1;
     }
 
-    .book .coverTitleWrap {
-        border-radius: 5px;
+    .subIntroWrap {
+        height: 20vh;
     }
 
-    .frontCover .coverTitle {
-        font-size: 1.4rem;
-        bottom: 30px;
+    .subIntroWrap .keyword::after {
+        width: 30px;
     }
 
-    .book .frontCover {
-        border-radius: 5px;
-        border-top-right-radius: 5px;
-        border-bottom-right-radius: 5px;
+    .sectionWrap {
+        height: 40vh;
     }
 
-    .book .page > li {
-        border-radius: 0px 3px 3px 0px;
+    .workTitleWrap .workTitle {
+        font-size: .8em;
     }
 
-    .book .back li {
-        border-radius: 5px;
+    .workImgList .workSubTitleWrap .workSubTitle {
+        font-size: .6em;
     }
-}
+
+    .workTitleWrap2 .workTitle {
+        font-size: .8em;
+    }
+
+    .footerWrap .circleArea, .footerWrap .footerTextWrap {
+        top: 40%;
+    }
+
+    .iconWrap {
+        right: 0.8em;
+        bottom: 0.8em;
+    }
+
+    .iconWrap .icon {
+        margin: 0 6px;
+        font-size: .6em;
+    }
+} */
