@@ -29,65 +29,6 @@ html, body, button {
     position: relative;
 }
 
-/* .inner::after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--black);
-    opacity: .8;
-    z-index: 1;
-} */
-
-
-/* 메뉴 영역 */
-/* .menuWrap {
-    position: fixed;
-    bottom: 30px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-    z-index: 999;
-}
-
-.menuList {
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-    border-radius: 50px;
-    background-color: var(--white);
-    width: fit-content;
-    margin: 0 auto;
-    padding: 5px 10px;
-}
-
-.menuList .menu {
-    -webkit-transition: all .5s ease-out;
-    -ms-transition: all .5s ease-out;
-    transition: all .5s ease-out;
-}
-
-.menuList .menu .menuText {
-    display: block;
-    font-size: 14px;
-    font-weight: 600;
-    padding: 5px 20px;
-    border-radius: 50px;
-}
-
-.menuList .menu.active {
-    background-color: var(--black);
-    border-radius: 50px;
-}
-
-.menuList .menu.active .menuText {
-    color: var(--white);
-} */
-
 
 /* 헤더 영역 */
 .logoWrap, .iconWrap {
@@ -123,10 +64,6 @@ html, body, button {
     -ms-transition: all .5s ease-out;
     transition: all .5s ease-out;
 }
-
-/* .iconWrap .icon:hover {
-    color: var(--pink);
-} */
 
 
 /* 메인 영역 */
@@ -169,6 +106,7 @@ html, body, button {
 }
 
 .subIntroWrap .subIntro {
+    width: fit-content;
     font-weight: 400;
     line-height: 1.6;
     padding: 2em 0;
@@ -292,45 +230,6 @@ html, body, button {
     }
 }
 
-/* .circleWrap .circle.scroll {
-    width: 40vw;
-    height: 40vw;
-}
-
-.scroll {
-    width: 40vw;
-    height: 40vw;
-} */
-
-/* .introWrap .intro:last-child {
-    -webkit-transform: scaleX(-1);
-    -ms-transform: scaleX(-1);
-    transform: scaleX(-1);
-} */
-
-/* .introWrap .intro:nth-child(1) {
-    animation: textUp .5s ease-out;
-}
-
-.introWrap .intro:nth-child(2) {
-    animation: textUp 1s ease-out;
-}
-
-.introWrap .intro:nth-child(3) {
-    animation: textUp 1.5s ease-out;
-}
-
-@keyframes textUp {
-    0% {
-        opacity: 0;
-        transform: translate3d(0, 100%, 0);
-    }
-    100% {
-        opacity: 1;
-        transform: translateZ(0);
-    }
-} */
-
 
 /* 텍스트 애니메이션 영역 */
 .sectionWrap {
@@ -417,8 +316,6 @@ html, body, button {
     height: 200px;
     overflow: hidden;
     border-radius: 10px;
-    /* height: 147px;
-    overflow: hidden; */
 }
 
 .workImgList .workLink:hover::before {
@@ -473,34 +370,30 @@ html, body, button {
     width: fit-content;
 }
 
-/* .workStickyWrap.sticky {
-    padding-bottom: 40vh;
-} */
-
 .workStickyWrap.sticky .work {
     margin-top: 0;
+}
+
+.workStickyWrap.workStickyWrap2 {
+    padding-bottom: 50vh;
 }
 
 
 /* 푸터 */
 .workTitleWrap2 {
     margin: 0;
-    /* position: absolute;
-    bottom: 0;
-    left: 50%; */
 }
 
 .workTitleWrap2 .workTitle {
-    writing-mode: vertical-rl;
     text-align: center;
     margin: 0px auto;
     font-size: 1em;
+    writing-mode: vertical-lr;
 }
 
 .footerWrap {
-    position: relative;
+    height: 100vh;
     text-align: center;
-    margin-bottom: 10vh;
 }
 
 .footerWrap .footerTextWrap {
@@ -510,21 +403,31 @@ html, body, button {
 
 .footerWrap .footerTextWrap .mail {
     font-size: 3em;
+    -webkit-transition: all .5s ease-out;
+    -ms-transition: all .5s ease-out;
+    transition: all .5s ease-out;
 }
 
 .footerWrap .footerTextWrap .footerTextWord {
     display: inline-block;
 }
 
-/* .footerWrap .circleArea {
+.footerWrap .circleArea,
+.footerWrap .footerTextWrap {
     position: absolute;
-    bottom: 0;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
-} */
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
 
-.footerWrap .circleWrap {
-    z-index: -1;
+.footerWrap .footerTextWrap {
+    top: 63%;
+}
+
+.footerWrap .footerTextWrap:hover .mail {
+    color: var(--blue);
 }
 
 .footerWrap .circleWrap .circle {
