@@ -76,6 +76,7 @@ html, body, button {
 .introListWrap {
     position: relative;
     padding: 8em;
+    cursor: pointer;
 }
 
 .introListWrap .introList {
@@ -92,6 +93,57 @@ html, body, button {
 .introListWrap .introList .intro {
     font-size: 1.3em;
     line-height: 2;
+}
+
+.introListWrap .intro.resume {
+    position: relative;
+}
+
+.introListWrap .intro.resume::before,
+.introListWrap .intro.resume::after  {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -100px;
+    width: 15px;
+    height: 15px;
+    border-left: none;
+    border-top: none;
+    border-right: 1px solid var(--white);
+    border-bottom: 1px solid var(--white);
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.introListWrap .intro.resume::before {
+    left: -8px;
+    animation: arrow1 1s infinite ease-out;
+}
+
+.introListWrap .intro.resume::after {
+    left: 8px;
+    animation: arrow2 1s infinite ease-out;
+}
+
+@keyframes arrow1 {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        left: 5px;
+    }
+}
+
+@keyframes arrow2 {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        left: 15px;
+    }
 }
 
 .introListWrap .introList .italic {
