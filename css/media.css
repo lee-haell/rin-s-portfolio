@@ -89,6 +89,11 @@
         z-index: -1;
     }
 
+    .circleWrap .circle {
+        width: 25vw;
+        height: 25vw;
+    }
+
     .subIntroWrap {
         height: 50vh;
     }
