@@ -23,7 +23,7 @@
 
 /* tablet size - 768px */
 @media screen and (max-width: 768px) {
-     .subIntroInner {
+    .subIntroInner {
         font-size: .8em;   
     }
 
@@ -90,7 +90,7 @@
     }
 
     .subIntroWrap {
-        height: 20vh;
+        height: 50vh;
     }
 
     .subIntroWrap .keyword::after {
@@ -124,64 +124,6 @@
 
     .iconWrap .icon {
         margin: 0 6px;
-        font-size: .6em;
+        font-size: 1em;
     }
 }
-
-/* mobile size - 320px */
-/* @media screen and (max-width: 320px) {
-    .logo a {
-        font-size: .6em;
-    }
-
-    .introWrap {
-        display: block;
-    }
-
-    .introListWrap {
-        top: 50%;
-    }
-
-    .circleArea {
-        top: 30%;
-        z-index: -1;
-    }
-
-    .subIntroWrap {
-        height: 20vh;
-    }
-
-    .subIntroWrap .keyword::after {
-        width: 30px;
-    }
-
-    .sectionWrap {
-        height: 40vh;
-    }
-
-    .workTitleWrap .workTitle {
-        font-size: .8em;
-    }
-
-    .workImgList .workSubTitleWrap .workSubTitle {
-        font-size: .6em;
-    }
-
-    .workTitleWrap2 .workTitle {
-        font-size: .8em;
-    }
-
-    .footerWrap .circleArea, .footerWrap .footerTextWrap {
-        top: 40%;
-    }
-
-    .iconWrap {
-        right: 0.8em;
-        bottom: 0.8em;
-    }
-
-    .iconWrap .icon {
-        margin: 0 6px;
-        font-size: .6em;
-    }
-} */
