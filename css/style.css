@@ -55,6 +55,9 @@ html, body, button {
     left: 50%;
     transform: translateX(-50%);
     bottom: 1em;
+    background-color: #000;
+    border-radius: 20px;
+    padding: 6px 18px;
 }
 
 .iconWrap .icon {
