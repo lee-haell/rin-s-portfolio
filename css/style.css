@@ -51,15 +51,35 @@ html, body, button {
     text-shadow: 0 0 10px var(--pink),0 0 50px var(--pink);
 }
 
+.fixedWrap {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1;
+}
+
 .iconWrap {
+    position: relative;
+    background-color: #000;
+    border-radius: 20px;
+    width: 3em;
+    height: 5.5em;
+}
+
+.iconWrap .iconLink:nth-child(1) {
+    position: absolute;
+    font-size: 1em;
+    top: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.iconWrap .iconLink:nth-child(2) {
+    position: absolute;
     left: 50%;
     transform: translateX(-50%);
     bottom: 1em;
-    background-color: #000;
-    border-radius: 20px;
-    padding: 6px 18px;
 }
-
 .iconWrap .icon {
     margin: 0 10px;
     font-size: 1.3em;
@@ -441,7 +461,21 @@ html, body, button {
 
 .workImgList .workImg {
     width: 100%;
+    position: absolute;
+    /* left: 50%;
+    transform: translate(-50%, -50%); */
+    left: 0;
+    transform: translateY(-50%);
+    top: 50%;
     border-radius: 10px;
+    z-index: -1;
+}
+
+.workImgList .workImg.studyPage {
+    height: 100%;
+    width: auto;
+    /* left: 0;
+    transform: translateY(-50%); */
 }
 
 .workImgList .workSubTitleWrap {
